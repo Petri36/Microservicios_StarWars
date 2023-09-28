@@ -10,8 +10,13 @@ characterRouter.get("/", async (req, res) => {
     const characters = response.data;
     res.status(200).json(characters);
   } catch (error) {
-    console.error("Error al realizar la solicitud a la base de datos:", error.message);
-    res.status(500).json({ error: "Error al obtener datos de la base de datos" });
+    console.error(
+      "Error al realizar la solicitud a la base de datos:",
+      error.message
+    );
+    res
+      .status(500)
+      .json({ error: "Error al obtener datos de la base de datos" });
   }
 });
 

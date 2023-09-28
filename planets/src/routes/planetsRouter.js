@@ -1,4 +1,4 @@
-const { Router } = require("express");
+<<<<<const { Router } = require("express");
 const planets = require("../data/planets.json");
 const axios = require("axios");
 
@@ -21,3 +21,4 @@ planetsRouter.get("/", async (req, res) => {
 });
 
 module.exports = planetsRouter;
+>>>>>

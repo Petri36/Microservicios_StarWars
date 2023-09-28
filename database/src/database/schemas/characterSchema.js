@@ -27,7 +27,7 @@ characterSchema.statics.get = async function (id) {
 };
 
 characterSchema.statics.insert = async function (character) {
- return await this.create(character)
-}
+  return await this.create(character);
+};
 
 module.exports = characterSchema;
